@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:fillViewport="true"
+
+
+
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/colors_list"
+            android:id="@+id/parent"
+            >
+
+
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+                    android:text="First Name"
+                    />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/fname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+
+                    />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Last Name"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+                    />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/lname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+                    />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Enter Your Email Address"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+                    />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="25dp"
+                    />
+
+                    <Button
+                        android:id="@+id/show"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="125dp"
+                        android:gravity="center"
+                        android:text="SHOW TOAST" />
+                <Button
+                    android:id="@+id/reset"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:gravity="center"
+                    android:text="RESET" />
+                <Button
+                    android:id="@+id/share"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:gravity="center"
+                    android:text="SHARE" />
+        </LinearLayout>
+
+
+
+</ScrollView>
