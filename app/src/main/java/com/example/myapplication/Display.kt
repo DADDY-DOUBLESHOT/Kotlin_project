@@ -37,8 +37,10 @@ class Display :AppCompatActivity(){
             startActivity(mainActivity_intent);
         }
         contactlist.setOnClickListener{
-            val mainActivity_intent=Intent(this,ContactView::class.java);
-            startActivity(mainActivity_intent);
+            val contacts=Intent(this,ContactView::class.java);
+            contacts.putExtra("fname",bundle!!.getString("f_name"));
+            contacts.putExtra("lname",bundle!!.getString("l_name"));
+            startActivity(contacts);
         }
 
     }

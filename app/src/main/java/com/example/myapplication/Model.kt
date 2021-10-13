@@ -1,23 +1,24 @@
 package com.example.myapplication
 
 
-data class  Contacts(var fname:String   )
+data class  Model(val fname:String,val lname:String )
+{
+}
 
 
 object loadData{
 
-    val contactList= listOf<Contacts>(
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-        Contacts("demo1"),
-
+    val contactList= listOf<Model>(
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
+        Model("demo1","demo2"),
 
 
     );

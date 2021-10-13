@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">My Application</string>
+
+<!--    textNames-->
+    <string name="app_name">KOTLIN PRACTISE</string>
+    <string name="TV_fname">First Name</string>
+    <string name="TV_lname">Last Name</string>
+    <string name="TV_email">Email Address</string>
+
+
+
+
+<!--    buttons-->
+    <string name="btn_show_toast">SHOW TOAST</string>
+    <string name="btn_share">SHARE</string>
+    <string name="btn_reset">RESET</string>
+    <string name="btn_edit">EDIT</string>
+    <string name="btn_contacts">CONTACTS</string>
+
+<!--    testing-->
+    <string name="TV_title">Title</string>
 </resources>

@@ -28,7 +28,7 @@
                     android:fontFamily="sans-serif-black"
                     android:layout_margin="20dp"
                     android:textSize="25dp"
-                    android:text="First Name"
+                    android:text="@string/TV_fname"
                     />
 
                 <EditText
@@ -46,7 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
-                    android:text="Last Name"
+                    android:text="@string/TV_lname"
                     android:layout_margin="20dp"
                     android:textSize="25dp"
                     />
@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
-                    android:text="Enter Your Email Address"
+                    android:text="@string/TV_email"
                     android:layout_margin="20dp"
                     android:textSize="25dp"
                     />
@@ -86,7 +86,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="125dp"
                         android:gravity="center"
-                        android:text="SHOW TOAST" />
+                        android:text="@string/btn_show_toast" />
                 <Button
                     android:id="@+id/reset"
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="150dp"
                     android:gravity="center"
-                    android:text="RESET" />
+                    android:text="@string/btn_reset" />
                 <Button
                     android:id="@+id/share"
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
@@ -102,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="150dp"
                     android:gravity="center"
-                    android:text="SHARE" />
+                    android:text="@string/btn_share" />
         </LinearLayout>
 
 

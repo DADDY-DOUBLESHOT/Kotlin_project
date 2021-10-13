@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    textNames-->
+    <string name="app_name">कोटलिन अभ्यास</string>
+    <string name="TV_fname">पहला नाम</string>
+    <string name="TV_lname">उपनाम</string>
+    <string name="TV_email">ईमेल पता</string>
+
+
+
+
+    <!--    buttons-->
+    <string name="btn_show_toast">टोस्ट दिखाओ</string>
+    <string name="btn_share">साझा करना</string>
+    <string name="btn_reset">रीसेट</string>
+    <string name="btn_edit">संपादित करें</string>
+    <string name="btn_contacts">संपर्क</string>
+
+    <!--    testing-->
+    <string name="TV_title">शीर्षक</string>
+
+
+</resources>

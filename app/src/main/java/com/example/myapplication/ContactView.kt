@@ -1,25 +1,41 @@
 package com.example.myapplication
 
-import android.app.Activity
 import android.os.Bundle
-import android.text.Layout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myapplication.R.id.mainview
-import com.example.myapplication.R.layout.contacts;
-import com.example.myapplication.R.layout.contacts.mainview;
+import androidx.recyclerview.widget.RecyclerView
 
 
 class ContactView : AppCompatActivity() {
 
-    var layoutManager = LinearLayoutManager(this);
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(contacts);
-        layoutManager.orientation=LinearLayoutManager.VERTICAL;
-        mainview.layoutManager=layoutManager;
-        val adapter =ContactsAdapter(this,loadData.contactList);
-        mainview.adapter=adapter;
+        setContentView(R.layout.contacts);
+
+        val bundle :Bundle?=intent.extras;
+
+        bundle?.let {
+            val fname=bundle.getString("fname");
+            val lname=bundle.getString("lname");
+
+            val recyclerview=findViewById<RecyclerView>(R.id.mainview);
+            val data=ArrayList<Model>();
+            val adapter =ContactsAdapter(data);
+            recyclerview.layoutManager=LinearLayoutManager(this);
+
+            data.addAll(loadData.contactList);
+            data.add(Model("demo ","item 1  "))
+            data.add(Model("demo ","item 2 "))
+            data.add(Model(fname.toString(),lname.toString()));
+            recyclerview.adapter=adapter;
+
+
+
+        }
+
+
+
 
     }
 
